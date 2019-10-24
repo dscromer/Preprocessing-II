@@ -1,1 +1,33 @@
 // Navigation Styles here
+
+.header {
+    .flexbox(row, space-between);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-items: center;
+
+    h1 {
+
+    }
+
+    nav {
+        .flexbox(row, space-between);
+        width: 50%;
+        a {
+            font-family: inherit;
+            text-decoration: none;
+            color: black;
+        }
+    }    
+}
+
+.line {
+    border: 2px dashed @navigation-border;
+    margin: 0;
+}
+
+.welcome {
+    margin: 3% 0;
+    padding-bottom: 1%;
+    border-bottom: 2px dashed @navigation-border;
+}
