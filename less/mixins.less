@@ -6,3 +6,34 @@
     justify-content: @jc;
 
 }
+
+.custom-btn(@bg, @c) {
+    background-color: @bg;
+    color: @c;
+    height: 45px;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 1px @silver;
+
+    &:hover {
+        animation: pulse 1s infinite;
+
+        @keyframes pulse {
+            0% {
+                background-color: @bg;
+            }
+
+            50% {
+                background-color: @shark;
+            }
+
+            100% {
+                background-color: @bg;
+            }
+        }
+
+    }
+
+}

@@ -6,7 +6,15 @@
     margin-bottom: 2%;
     align-items: center;
 
+    @media @mobile {
+        .flexbox(column, space-evenly)
+    }
+
     h1 {
+        @media @mobile {
+            font-size: 3rem;
+            margin-bottom: 2%;
+        }
 
     }
 
@@ -18,16 +26,14 @@
             text-decoration: none;
             color: black;
         }
+        @media @mobile {
+            width: 100%;
+            .flexbox(row, space-evenly)
+        }
     }    
 }
 
 .line {
     border: 2px dashed @navigation-border;
     margin: 0;
-}
-
-.welcome {
-    margin: 3% 0;
-    padding-bottom: 1%;
-    border-bottom: 2px dashed @navigation-border;
 }
