@@ -160,7 +160,7 @@ p {
   padding-bottom: 10px;
 }
 img {
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
 }
 .container {
@@ -169,8 +169,8 @@ img {
   margin: 0 auto;
 }
 @media (max-width: 500px) {
-  .container {
-    margin: 0 5%;
+  .monkey {
+    margin: 5%;
   }
 }
 a {
@@ -232,7 +232,7 @@ a {
   padding: 20px;
 }
 .home .welcome {
-  margin: 3% 0;
+  margin: ;
   padding-bottom: 1%;
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -256,6 +256,7 @@ a {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
+    padding: 0;
   }
 }
 .home .content-section .img-content {
@@ -270,6 +271,11 @@ a {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
